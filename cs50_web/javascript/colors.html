@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colors</title>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', () => {
 
             // Select all buttons and change text-color according to data-set
-            document.querySelectorAll('button').forEach(function(button) {
-                button.onclick = function() {
+            document.querySelectorAll('button').forEach(button => {
+                button.onclick = () => {
                     document.querySelector('#hello').style.color = button.dataset.color;
                 }
             });
