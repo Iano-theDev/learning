@@ -8,6 +8,7 @@
     <script>
         document.addEventListener('DOMContentLoaded', function() {
 
+	// issue with api key: not returning json object
             fetch('https://api.exchangeratesapi.io/latest?base=USD')
             .then(response => response.json())
             .then(data => {
